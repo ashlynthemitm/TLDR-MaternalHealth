@@ -1,5 +1,5 @@
 # TLDR Maternal Health
-![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/1213fdc7-7c31-46bf-b748-3f85f7b5531a)
+![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/2a4ec153-ba83-47b7-a423-c421f5c17818)
 
 # Table of Contents
 1. [Project Overview](#project-overview)
