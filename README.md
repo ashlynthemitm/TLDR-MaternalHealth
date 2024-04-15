@@ -85,9 +85,6 @@ This section outlines how to contribute to the project and guidelines for contri
 
 # Demo
 
-![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/249ffb14-e102-4895-a2bd-0cf55393da0d)
-![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/57957946-3097-48f5-9296-77366b288f5d)
-
 
 # License
 
