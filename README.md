@@ -1,43 +1,35 @@
 # TLDR-MaternalHealth
-A cloud computing project using a distributed system to summarize text and store into a database.
 
 # Table of Contents
 
-1. [Introduction](#introduction)
-2. [Project Overview](#project-overview)
-3. [Technologies Used](#technologies-used)
+1. [Project Overview](#project-overview)
+2. [Design](#design)
     - [Azure Virtual Machines](#azure-virtual-machines)
     - [PostgreSQL Database](#postgresql-database)
     - [Docker](#docker)
     - [Python Transformers](#python-transformers)
-4. [Setup Instructions](#setup-instructions)
+3. [Implementation Instructions](#implementation-instructions)
     - [Azure Virtual Machines Setup](#azure-virtual-machines-setup)
     - [PostgreSQL Database Setup](#postgresql-database-setup)
     - [Docker Setup](#docker-setup)
-5. [Usage](#usage)
+4. [Usage](#usage)
     - [Using Azure Virtual Machines](#using-azure-virtual-machines)
     - [Accessing the PostgreSQL Database](#accessing-the-postgresql-database)
     - [Running Docker](#running-docker)
-6. [Project Structure](#project-structure)
-7. [Contributing](#contributing)
-8. [License](#license)
-
-
-# Introduction
-
-This section provides an overview of the project and its objectives.
+5. [Project Structure](#project-structure)
+6. [Contributing](#contributing)
+7. [License](#license)
 
 # Project Overview
 
-This section describes the main goals and scope of the project.
+TLDR Maternal Health is a project that utilizes cloud computing, and natural language processing and hopes to integrate an interactive user interface to provide crucial information to pregnant women. 
 
-# Technologies Used
-
-This section lists the technologies and tools used in the project.
+# Design
+The primary components of TLDR Maternal Health are Azure Virtual Machines, a PostgreSQL Database, and Python Transformers.
 
 ## Azure Virtual Machines
 
-This subsection provides details about the Azure Virtual Machines used in the project.
+- Distributed Syste
 
 ## PostgreSQL Database
 
@@ -51,7 +43,7 @@ This subsection explains the usage of Docker in the project.
 
 This subsection discusses the usage of Python Transformers in the project.
 
-# Setup Instructions
+# Implementation Instructions
 
 This section provides step-by-step instructions for setting up the project environment.
 
