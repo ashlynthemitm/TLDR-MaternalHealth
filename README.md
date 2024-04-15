@@ -29,7 +29,7 @@ The primary components of TLDR Maternal Health are Azure Virtual Machines, a Pos
 
 ## Azure Virtual Machines
 
-- Distributed Syste
+![CCmaps](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/10d1fe9c-ca8b-481e-b5af-ebe1d9abcbf8)
 
 ## PostgreSQL Database
 
