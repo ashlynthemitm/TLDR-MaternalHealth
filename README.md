@@ -1,8 +1,7 @@
-# TLDR-MaternalHealth
-![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/3e50a7df-3ce1-4fde-981e-dc68fe91f92e)
+# TLDR Maternal Health
+![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/1213fdc7-7c31-46bf-b748-3f85f7b5531a)
 
 # Table of Contents
-
 1. [Project Overview](#project-overview)
 2. [Design](#design)
     - [Azure Virtual Machines](#azure-virtual-machines)
