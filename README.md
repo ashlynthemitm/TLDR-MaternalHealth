@@ -79,10 +79,14 @@ This subsection describes how to run the project using Docker.
 
 This section provides an overview of the project directory structure.
 
-# Contributing
+# Key Measurement Results
+
+This section outlines how to contribute to the project and guidelines for contributors.
+
+# Demo
 
 This section outlines how to contribute to the project and guidelines for contributors.
 
 # License
 
-This section specifies the license under which the project is distributed.
+© Ashlyn Campbell
