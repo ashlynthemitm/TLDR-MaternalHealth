@@ -26,7 +26,7 @@
 TLDR Maternal Health is a project that utilizes cloud computing, and natural language processing and hopes to integrate an interactive user interface to provide crucial information to pregnant women. 
 
 # Design
-The primary components of TLDR Maternal Health are Azure Virtual Machines, a PostgreSQL Database, and Python Transformers.
+This section shows a visual design of the primary components of TLDR Maternal Health, which are Azure Virtual Machines, a PostgreSQL Database, and Python Transformers.
 
 ## Azure Virtual Machines
 
@@ -42,7 +42,9 @@ The primary components of TLDR Maternal Health are Azure Virtual Machines, a Pos
 
 ## Python Transformers
 
-This subsection discusses the usage of Python Transformers in the project.
+Originally the proposal suggested using SpaCy for text summarization, but this NLP library didn't have the best precision. The final chosen text summarization technique is a Bart Transformer model that processes slightly slower but generates incredible summaries that take key insights.
+
+![CCmaps (3)](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/90a5e7dc-4c61-41b9-b695-c75e80ee0757)
 
 # Implementation Instructions
 
