@@ -52,7 +52,36 @@ This section provides step-by-step instructions for setting up the project envir
 
 ## Azure Virtual Machines Setup
 
-This subsection details the setup process for Azure Virtual Machines.
+Instructions: https://learn.microsoft.com/en-us/azure/network-watcher/monitor-vm-communication
+Here are the steps summarized for your implementation instructions section:
+
+1. Introduction to Azure Network Watcher:
+   - Understand the role of Azure Network Watcher in monitoring and troubleshooting network communication.
+
+2. Setting up Network Watcher:
+   - Navigate to the Azure portal and locate the Network Watcher service.
+   - Enable Network Watcher for your Azure subscription and select the appropriate region.
+   - Verify that Network Watcher is enabled for the virtual network where your virtual machines reside.
+
+3. Monitoring VM-to-VM Communication:
+   - Access the Network Watcher dashboard and select the "VM to VM" option.
+   - Choose the source and destination virtual machines to monitor communication between them.
+   - Analyze the network traffic flow and troubleshoot any connectivity issues detected.
+
+4. Utilizing Network Watcher Tools:
+   - Explore the various tools available within Network Watcher, such as Connection Monitor and Packet Capture.
+   - Use Connection Monitor to track network connectivity between virtual machines and diagnose connectivity problems.
+   - Employ Packet Capture to capture and analyze network traffic for troubleshooting purposes.
+
+5. Implementing NSG Flow Logs:
+   - Enable NSG flow logs for the network security groups (NSGs) associated with your virtual machines.
+   - Configure the storage account where NSG flow logs will be stored for analysis.
+
+6. Configuring NSG and Firewall Rules:
+   - Define and implement network security group (NSG) rules to control inbound and outbound traffic for your virtual machines.
+   - Configure firewall rules to further restrict network traffic and enhance security within your Azure environment.
+     
+![CCmaps (4)](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/2d886327-eac9-4617-8d08-dcd59b851135)
 
 ## PostgreSQL Database Setup
 
