@@ -208,6 +208,7 @@ This section outlines how performance improved throughout the development of thi
 
 
 # Demo
+![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/6673b03c-4fd3-4eef-a678-3573c0860c44)
 
 # What did I learn?
 
