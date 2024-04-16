@@ -10,6 +10,7 @@
     - [Python Transformers](#python-transformers)
 3. [Implementation Instructions](#implementation-instructions)
     - [Azure Virtual Machines Setup](#azure-virtual-machines-setup)
+    - [python-connection](#python-connection)
     - [PostgreSQL Database Setup](#postgresql-database-setup)
     - [Docker Setup](#docker-setup)
 4. [Usage](#usage)
@@ -81,6 +82,53 @@ Here are the steps summarized for your implementation instructions section:
    - Access the Network Watcher dashboard and select the "VM1 to VM2" option.
 
 ![CCmaps (4)](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/2d886327-eac9-4617-8d08-dcd59b851135)
+
+## Python Connection
+
+```
+# Server VM
+
+# client socket
+    c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_address = (('10.0.0.5', 8888))
+    
+    # connect to the server
+    c.connect(server_address)
+    
+    # request tldr summaries
+    if type == 'tldr':
+        Model.begin() 
+        with open('tldr.json', 'r') as json_file:
+            data = json.load(json_file)
+    else:
+        print('Invalid Request Type')    
+        return
+
+    # send data to client and close the connection
+    c.sendall(data.encode())
+    c.close()
+
+```
+
+```
+# Client VM
+
+# server socket
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.bind(('10.0.0.5',8888))
+    s.listen(1)
+    
+    print('Server is listening...')
+    
+    # accept incoming connections from client
+    c_socket, c_address = s.accept()
+    print(f'Connection from {c_address}')
+    
+    # receive data from the client
+    data = c_socket.recv(1024).decode()
+    print(f'Received from client: {data}')
+
+```
 
 ## PostgreSQL Database Setup
 
@@ -208,12 +256,21 @@ This section outlines how performance improved throughout the development of thi
 
 
 # Demo
-![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/6673b03c-4fd3-4eef-a678-3573c0860c44)
+Original Article: https://www.nhs.uk/pregnancy/week-by-week/1-to-12/1-2-3-weeks/
+![Screenshot 2024-04-15 224307](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/35ac9a40-2eb1-4f42-abe0-3ae5767e2544)
 
 # What did I learn?
 
 1. How to create Azure Virtual Machines
-2. 
+   - Connection Monitor
+   - Network Watcher
+   - Defining allocated resources
+   - Upkeeping resources
+2. Cleaning up the machine for additional storage -> Estimating the amount of storage required
+3. Creating a Dockerfile for the requirements of multiple machines
+4. Interacting between Client & Server Virtual Machines
+5. Using Transformers for summarization
+6. Using Python for Client-Server interaction
 
 # License
 
