@@ -52,7 +52,9 @@ This section provides step-by-step instructions for setting up the project envir
 
 ## Azure Virtual Machines Setup
 
-Instructions: https://learn.microsoft.com/en-us/azure/network-watcher/monitor-vm-communication
+Instructions: 
+- https://learn.microsoft.com/en-us/azure/network-watcher/monitor-vm-communication
+- https://learn.microsoft.com/en-us/azure/virtual-network/quick-create-portal
 
 Here are the steps summarized for your implementation instructions section:
 
@@ -61,42 +63,64 @@ Here are the steps summarized for your implementation instructions section:
     - Size: Standard B2s
     - vCPUs: 2
     - RAM: 4 GiB
+      
 2. Create Virtual Machine 2 or Client VM
 - Size
     - Size: Standard B1ms
     - vCPUs: 1
     - RAM: 2 GiB
-3. Set up Azure Network Watcher:
-   - Understand the role of Azure Network Watcher in monitoring and troubleshooting network communication.
-
-4. Setting up Network Watcher:
-   - Navigate to the Azure portal and locate the Network Watcher service.
+      
+3. Create a Connection Monitor
+- Protocol: TCP
+- Destination Port: 22
+  
+4. Set up Azure Network Watcher:
    - Enable Network Watcher for your Azure subscription and select the appropriate region.
-   - Verify that Network Watcher is enabled for the virtual network where your virtual machines reside.
 
 5. Monitoring VM-to-VM Communication:
-   - Access the Network Watcher dashboard and select the "VM to VM" option.
-   - Choose the source and destination virtual machines to monitor communication between them.
-   - Analyze the network traffic flow and troubleshoot any connectivity issues detected.
+   - Access the Network Watcher dashboard and select the "VM1 to VM2" option.
 
-6. Utilizing Network Watcher Tools:
-   - Explore the various tools available within Network Watcher, such as Connection Monitor and Packet Capture.
-   - Use Connection Monitor to track network connectivity between virtual machines and diagnose connectivity problems.
-   - Employ Packet Capture to capture and analyze network traffic for troubleshooting purposes.
-
-7. Implementing NSG Flow Logs:
-   - Enable NSG flow logs for the network security groups (NSGs) associated with your virtual machines.
-   - Configure the storage account where NSG flow logs will be stored for analysis.
-
-8. Configuring NSG and Firewall Rules:
-   - Define and implement network security group (NSG) rules to control inbound and outbound traffic for your virtual machines.
-   - Configure firewall rules to further restrict network traffic and enhance security within your Azure environment.
-     
 ![CCmaps (4)](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/2d886327-eac9-4617-8d08-dcd59b851135)
 
 ## PostgreSQL Database Setup
 
-This subsection explains how to set up the PostgreSQL Database.
+# Update the package index
+sudo apt update
+
+# Install PostgreSQL and its dependencies
+sudo apt install postgresql postgresql-contrib
+
+# Check the status of PostgreSQL service
+sudo systemctl status postgresql
+
+# Optionally, start the PostgreSQL service if it's not already running
+sudo systemctl start postgresql
+
+# Optionally, enable PostgreSQL service to start on boot
+sudo systemctl enable postgresql
+
+# By default, PostgreSQL creates a Linux user named "postgres"
+# Switch to the "postgres" user
+sudo su - postgres
+
+# Access the PostgreSQL command-line interface (psql)
+psql
+
+# Create a new database user and set a password
+CREATE USER myuser WITH PASSWORD 'mypassword';
+
+# Create a new database and assign ownership to the newly created user
+CREATE DATABASE mydatabase OWNER myuser;
+
+# Grant all privileges on the database to the user
+GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
+
+# Exit the PostgreSQL command-line interface
+\q
+
+# Exit from the "postgres" user session
+exit
+
 
 ## Docker Setup
 
