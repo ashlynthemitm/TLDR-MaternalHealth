@@ -122,7 +122,7 @@ GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
 # Exit from the "postgres" user session
 exit
 
-
+'''
 
 ## Docker Setup
 
