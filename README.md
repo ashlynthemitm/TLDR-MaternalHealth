@@ -172,7 +172,7 @@ docker run client-image python client-side.py
 # Project Structure
 
 This section provides an overview of the project directory structure.
-
+```
 project/
 │
 ├── ServerFolder/
@@ -196,13 +196,13 @@ project/
 │   └── test_stat.ipynb
 │
 └── README.md
-
+```
 
 # Key Measurement Results
 
 This section outlines how performance improved throughout the development of this project.
 
-- Spacy to BART
+## Spacy to BART
   ![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/d3769aa0-aa21-400b-96f5-958244a48ef5)
   ![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/2d99db99-1ce9-4726-9696-16969722937e)
 
