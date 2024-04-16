@@ -1,5 +1,7 @@
 # TLDR Maternal Health
 
+![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/a5201749-2fee-4fe5-8e84-84477bb65b7a)
+
 # Table of Contents
 1. [Project Overview](#project-overview)
 2. [Design](#design)
@@ -278,5 +280,3 @@ Original Article: https://www.nhs.uk/pregnancy/week-by-week/1-to-12/1-2-3-weeks/
 # License
 
 © Ashlyn Campbell
-
-![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/9fa0855a-1479-4c78-afe6-175e72700b54)
