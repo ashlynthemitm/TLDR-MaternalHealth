@@ -26,7 +26,7 @@
 
 # Project Overview
 
-TLDR Maternal Health is a project that utilizes cloud computing, and natural language processing and hopes to integrate an interactive user interface to provide crucial information to pregnant women. 
+TLDR Maternal Health is a comprehensive project that harnesses the power of a distributed system and natural language processing (NLP) techniques to cater to the informational needs of pregnant women. NLP techniques are employed to analyze and process textual information related to pregnancy, childbirth, and maternal health. This involves tasks such as text summarization, sentiment analysis, and information extraction from medical literature and online resources. The ultimate goal of the project is to develop an interactive user interface that offers essential guidance and support throughout the stages of pregnancy.
 
 # Design
 This section shows a visual design of the primary components of TLDR Maternal Health, which are Azure Virtual Machines, a PostgreSQL Database, and Python Transformers.
