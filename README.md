@@ -212,6 +212,8 @@ This section outlines how performance improved throughout the development of thi
 
 # What did I learn?
 
+1. How to create Azure Virtual Machines
+2. 
 
 # License
 
