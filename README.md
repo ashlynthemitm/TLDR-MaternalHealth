@@ -18,6 +18,8 @@
     - [Virtual Machine 2 or Client VM](#virtual-machine-2-or-client-vm)
 5. [Project Structure](#project-structure)
 6. [Key Measurement Results](#key-measurement-results)
+   - [SpaCy to BART](#spacy-to-bart)
+   - [Virtual Machine Resources](#virtual-machine-resources)
 7. [Demo](#demo)
 8. [What did I learn](#what-did-i-learn)
 9. [License](#license)
@@ -253,7 +255,9 @@ This section outlines how performance improved throughout the development of thi
 ## Spacy to BART
   ![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/d3769aa0-aa21-400b-96f5-958244a48ef5)
   ![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/2d99db99-1ce9-4726-9696-16969722937e)
-
+  
+## Virtual Machine Resources
+This project consisted of two data-heavy operations: a Transformer model that requires a large library installation and the database contents. Placing these tasks in separate virtual machines allowed for purchasing two inexpensive virtual machines that execute their task in parallel.
 
 # Demo
 Original Article: https://www.nhs.uk/pregnancy/week-by-week/1-to-12/1-2-3-weeks/
