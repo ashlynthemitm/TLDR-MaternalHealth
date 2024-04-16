@@ -84,6 +84,7 @@ Here are the steps summarized for your implementation instructions section:
 
 ## PostgreSQL Database Setup
 
+```bash
 # Update the package index
 sudo apt update
 
@@ -122,6 +123,7 @@ GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
 exit
 
 
+
 ## Docker Setup
 
 This subsection outlines the setup process for Docker in the project.
@@ -151,7 +153,6 @@ This section provides an overview of the project directory structure.
 This section outlines how to contribute to the project and guidelines for contributors.
 
 # Demo
-
 
 # License
 
