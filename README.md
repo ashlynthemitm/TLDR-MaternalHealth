@@ -13,13 +13,13 @@
     - [PostgreSQL Database Setup](#postgresql-database-setup)
     - [Docker Setup](#docker-setup)
 4. [Usage](#usage)
-    - [Using Azure Virtual Machines](#using-azure-virtual-machines)
-    - [Accessing the PostgreSQL Database](#accessing-the-postgresql-database)
-    - [Running Docker](#running-docker)
+    - [Virtual Machine 1 or Server VM](#virtual-machine-1-or-server-vm)
+    - [Virtual Machine 2 or Client VM](#virtual-machine-2-or-client-vm)
 5. [Project Structure](#project-structure)
 6. [Key Measurement Results](#key-measurement-results)
 7. [Demo](#demo)
-8. [License](#license)
+8. [What did I learn](#what-did-i-learn)
+9. [License](#license)
 
 # Project Overview
 
@@ -94,12 +94,6 @@ sudo apt install postgresql postgresql-contrib
 # Check the status of PostgreSQL service
 sudo systemctl status postgresql
 
-# Optionally, start the PostgreSQL service if it's not already running
-sudo systemctl start postgresql
-
-# Optionally, enable PostgreSQL service to start on boot
-sudo systemctl enable postgresql
-
 # By default, PostgreSQL creates a Linux user named "postgres"
 # Switch to the "postgres" user
 sudo su - postgres
@@ -126,33 +120,97 @@ exit
 
 ## Docker Setup
 
-This subsection outlines the setup process for Docker in the project.
+```
+# Update the package index
+sudo apt update
+
+# Install Docker prerequisites
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+# Add the Docker GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Add the Docker repository
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+# Update the package index again
+sudo apt update
+
+# Install Docker Engine
+sudo apt install docker-ce
+
+# Verify Docker installation by checking the version
+docker --version
+
+exit
+```
 
 # Usage
 
 This section explains how to use the project after it has been set up.
 
-## Using Azure Virtual Machines
+## Virtual Machine 1 or Server VM
 
-This subsection provides instructions on how to utilize Azure Virtual Machines.
+```
+ssh -v -i file1.pem azureuser@address
+cd ServerFolder
+docker build -t server-image . 
+docker run server-image python server-side.py
 
-## Accessing the PostgreSQL Database
+```
 
-This subsection explains how to access and interact with the PostgreSQL Database.
+## Virtual Machine 2 or Client VM
 
-## Running Docker
+```
+ssh -v -i file2.pem azureuser@address
+cd ClientFolder
+docker build -t client-image . 
+docker run client-image python client-side.py
 
-This subsection describes how to run the project using Docker.
+```
 
 # Project Structure
 
 This section provides an overview of the project directory structure.
 
+project/
+│
+├── ServerFolder/
+│   ├── Dockerfile
+│   ├── Model.py
+│   ├── server-side.py
+│   ├── tldr.json
+│   └── requirements.txt
+│
+├── ClientFolder/
+│   ├── Dockerfile
+│   ├── entrypoint.sh
+│   ├── input-tldr-data.sql
+│   ├── requirements.txt
+│   ├── client-side.py
+│   ├── server.py
+│   └── output_data.csv
+│
+├── tests/
+│   ├── rouge.ipynb
+│   └── test_stat.ipynb
+│
+└── README.md
+
+
 # Key Measurement Results
 
-This section outlines how to contribute to the project and guidelines for contributors.
+This section outlines how performance improved throughout the development of this project.
+
+- Spacy to BART
+  ![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/d3769aa0-aa21-400b-96f5-958244a48ef5)
+  ![image](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/2d99db99-1ce9-4726-9696-16969722937e)
+
 
 # Demo
+
+# What did I learn?
+
 
 # License
 
