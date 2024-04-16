@@ -84,7 +84,7 @@ Here are the steps summarized for your implementation instructions section:
 
 ## PostgreSQL Database Setup
 
-```bash
+```
 # Update the package index
 sudo apt update
 
@@ -108,13 +108,13 @@ sudo su - postgres
 psql
 
 # Create a new database user and set a password
-CREATE USER myuser WITH PASSWORD 'mypassword';
+CREATE USER azureuser WITH PASSWORD '...';
 
 # Create a new database and assign ownership to the newly created user
-CREATE DATABASE mydatabase OWNER myuser;
+CREATE DATABASE database OWNER azureuser;
 
 # Grant all privileges on the database to the user
-GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
+GRANT ALL PRIVILEGES ON DATABASE database TO azureuser;
 
 # Exit the PostgreSQL command-line interface
 \q
@@ -122,7 +122,7 @@ GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
 # Exit from the "postgres" user session
 exit
 
-'''
+```
 
 ## Docker Setup
 
