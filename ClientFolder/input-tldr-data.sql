@@ -1,0 +1,2 @@
+INSERT INTO tldr (title, summary, link) VALUES ('You and your pregnancy at 1 to 3 weeks - NHS', 'Your weeks of pregnancy are dated from the first day of your last period. This means that in the first 2 weeks or so, you are not actually pregnant. Your body is preparing for ovulation (releasing an egg from one of your ovaries) as usual.', 'https://www.nhs.uk/pregnancy/week-by-week/1-to-12/1-2-3-weeks/');
+SELECT * FROM week_by_week;

@@ -1,0 +1,7 @@
+python-dotenv==1.0.1
+beautifulsoup4==4.10.0
+requests==2.26.0
+transformers==4.39.2
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
