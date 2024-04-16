@@ -53,31 +53,42 @@ This section provides step-by-step instructions for setting up the project envir
 ## Azure Virtual Machines Setup
 
 Instructions: https://learn.microsoft.com/en-us/azure/network-watcher/monitor-vm-communication
+
 Here are the steps summarized for your implementation instructions section:
 
-1. Introduction to Azure Network Watcher:
+1. Create Virtual Machine 1 or Server VM 
+- Size
+    - Size: Standard B2s
+    - vCPUs: 2
+    - RAM: 4 GiB
+2. Create Virtual Machine 2 or Client VM
+- Size
+    - Size: Standard B1ms
+    - vCPUs: 1
+    - RAM: 2 GiB
+3. Set up Azure Network Watcher:
    - Understand the role of Azure Network Watcher in monitoring and troubleshooting network communication.
 
-2. Setting up Network Watcher:
+4. Setting up Network Watcher:
    - Navigate to the Azure portal and locate the Network Watcher service.
    - Enable Network Watcher for your Azure subscription and select the appropriate region.
    - Verify that Network Watcher is enabled for the virtual network where your virtual machines reside.
 
-3. Monitoring VM-to-VM Communication:
+5. Monitoring VM-to-VM Communication:
    - Access the Network Watcher dashboard and select the "VM to VM" option.
    - Choose the source and destination virtual machines to monitor communication between them.
    - Analyze the network traffic flow and troubleshoot any connectivity issues detected.
 
-4. Utilizing Network Watcher Tools:
+6. Utilizing Network Watcher Tools:
    - Explore the various tools available within Network Watcher, such as Connection Monitor and Packet Capture.
    - Use Connection Monitor to track network connectivity between virtual machines and diagnose connectivity problems.
    - Employ Packet Capture to capture and analyze network traffic for troubleshooting purposes.
 
-5. Implementing NSG Flow Logs:
+7. Implementing NSG Flow Logs:
    - Enable NSG flow logs for the network security groups (NSGs) associated with your virtual machines.
    - Configure the storage account where NSG flow logs will be stored for analysis.
 
-6. Configuring NSG and Firewall Rules:
+8. Configuring NSG and Firewall Rules:
    - Define and implement network security group (NSG) rules to control inbound and outbound traffic for your virtual machines.
    - Configure firewall rules to further restrict network traffic and enhance security within your Azure environment.
      
