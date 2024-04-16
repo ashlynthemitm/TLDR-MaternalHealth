@@ -17,8 +17,9 @@
     - [Accessing the PostgreSQL Database](#accessing-the-postgresql-database)
     - [Running Docker](#running-docker)
 5. [Project Structure](#project-structure)
-6. [Contributing](#contributing)
-7. [License](#license)
+6. [Key Measurement Results](#key-measurement-results)
+7. [Demo](#demo)
+8. [License](#license)
 
 # Project Overview
 
@@ -33,11 +34,11 @@ The primary components of TLDR Maternal Health are Azure Virtual Machines, a Pos
 
 ## PostgreSQL Database
 
-This subsection describes the PostgreSQL Database setup and usage.
+![CCmaps (1)](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/18eca218-2d19-4ac7-ab53-97ad70fbb167)
 
 ## Docker
 
-This subsection explains the usage of Docker in the project.
+![CCmaps (2)](https://github.com/ashlynthemitm/TLDR-MaternalHealth/assets/106557299/79ce2f9d-6dad-4748-b0d9-d3fbcd828172)
 
 ## Python Transformers
 
